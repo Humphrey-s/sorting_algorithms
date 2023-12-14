@@ -30,4 +30,8 @@ size_t get_p(int *array, size_t size, size_t to);
 
 void shell_sort(int *array, size_t size);
 int sshell(int *array, size_t size, size_t h, size_t start);
+
+void counting_sort(int *array, size_t size);
+int get_smallest(int *array, size_t size);
+int get_largest(int *array, size_t size);
 #endif
