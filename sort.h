@@ -29,5 +29,5 @@ void quick_sort(int *array, size_t size);
 size_t get_p(int *array, size_t size, size_t to);
 
 void shell_sort(int *array, size_t size);
-
+int sshell(int *array, size_t size, size_t h, size_t start);
 #endif
