@@ -36,6 +36,18 @@ void counting_sort(int *array, size_t size)
 		array[b] = array2[b];
 		b++;
 	}
+	_free(array2, size);
+	_free(array_count, k);
+}
+/**
+ * _free - frees memory
+ * @array: array
+ * @size: size
+ * Return: (Success)
+ */
+void _free(int *array, UNUSED size_t size)
+{
+	free(array);
 }
 /**
  * get_largest - get largest element in an array
