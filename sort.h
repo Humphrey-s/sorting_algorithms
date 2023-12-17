@@ -35,4 +35,7 @@ void counting_sort(int *array, size_t size);
 int get_smallest(int *array, size_t size);
 int get_largest(int *array, size_t size);
 void _free(int *array, size_t size);
+
+void merge_sort(int *array, size_t size);
+void merge_sortr(int *array, size_t size, size_t l, size_t h);
 #endif
