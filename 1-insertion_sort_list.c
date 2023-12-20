@@ -9,11 +9,13 @@
 void insertion_sort_list(listint_t **list)
 {
 	UNUSED size_t i = 0, a = 0;
-	UNUSED listint_t *ptr = *list, *p2;
+	UNUSED listint_t *ptr, *p2;
 
 
-	if (*list == NULL)
+	if (list == NULL)
 		return;
+
+	ptr = *list;
 
 	while (sortedl(list) != 1)
 	{
