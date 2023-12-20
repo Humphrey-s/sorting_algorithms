@@ -9,8 +9,12 @@
  */
 void quick_sort(int *array, size_t size)
 {
-	size_t pop = get_p(array, size, size - 1);
+	size_t pop;
 
+	if (array == NULL)
+		return;
+
+	pop = get_p(array, size, size - 1);
 	while (sorted(array, size) != 1)
 	{
 		pop = get_p(array, size, pop);
