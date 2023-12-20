@@ -41,7 +41,7 @@ listint_t *create_listint(const int *array, size_t size)
 int main(void)
 {
     listint_t *list;
-    int array[] = {10, 45, 43, 100, 77, 98, 26, 18, 32, 67, 41, 27, 16, 80, 86, 15, 94, 90, 29, 65};
+    int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
     size_t n = sizeof(array) / sizeof(array[0]);
 
     list = create_listint(array, n);
