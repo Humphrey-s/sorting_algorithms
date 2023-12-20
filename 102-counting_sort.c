@@ -16,7 +16,11 @@ void counting_sort(int *array, size_t size)
 	int *array2 = malloc(sizeof(int) * size);
 
 	if ((size == 1) || (largest == -1) || (size == 0))
+	{
+		free(array2);
+		free(array_count);
 		return;
+	}
 
 	for (i = 0; i < k; i++)
 	{
