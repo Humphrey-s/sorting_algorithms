@@ -12,6 +12,9 @@ void insertion_sort_list(listint_t **list)
 	UNUSED listint_t *ptr = *list, *p2;
 
 
+	if (*list == NULL)
+		return;
+
 	while (sortedl(list) != 1)
 	{
 		ptr = *list;
@@ -53,7 +56,10 @@ void swap(listint_t **list, listint_t *left, listint_t *right)
 
 		left->prev = right;
 		left->next = r_next;
-		r_next->prev = left;
+
+		if (r_next != NULL)
+			r_next->prev = left;
+
 		*list = right;
 		return;
 	}
