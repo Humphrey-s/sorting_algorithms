@@ -23,6 +23,9 @@ void print_list(const listint_t *list);
 int sorted(int *array, size_t size);
 
 void insertion_sort_list(listint_t **list);
+void swap(listint_t **list, listint_t *left, listint_t *right);
+int sortedl(listint_t **list);
+
 void selection_sort(int *array, size_t size);
 
 void quick_sort(int *array, size_t size);
