@@ -15,6 +15,9 @@ void counting_sort(int *array, size_t size)
 	int *array_count = malloc(sizeof(int) * k);
 	int *array2 = malloc(sizeof(int) * size);
 
+	if ((size == 1) || (largest == -1) || (size == 0))
+		return;
+
 	for (i = 0; i < k; i++)
 	{
 		for (a = 0; a < size; a++)
@@ -59,6 +62,9 @@ int get_largest(int *array, size_t size)
 {
 	int element;
 	size_t a = 0, b = 0;
+
+	if (array == NULL)
+		return (-1);
 
 	while (a < size)
 	{
